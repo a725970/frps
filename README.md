@@ -11,7 +11,7 @@
 ### 一键脚本(先运行脚本,在自行修改 frps.ini 文件.)
 安装
 ```shell
-wget https://raw.githubusercontent.com/BugP/frps/master/frps_linux_install.sh && chmod +x frps_linux_install.sh && ./frps_linux_install.sh
+wget https://raw.githubusercontent.com/a725970/frps/master/frps_linux_install.sh && chmod +x frps_linux_install.sh && ./frps_linux_install.sh
 ```
 
 使用
@@ -24,7 +24,7 @@ sudo systemctl restart frps
 
 卸载
 ```shell
-wget https://raw.githubusercontent.com/BugP/frps/master/frps_linux_uninstall.sh && chmod +x frps_linux_uninstall.sh && ./frps_linux_uninstall.sh
+wget https://raw.githubusercontent.com/a725970/frps/master/frps_linux_uninstall.sh && chmod +x frps_linux_uninstall.sh && ./frps_linux_uninstall.sh
 ```
 
 
@@ -41,12 +41,12 @@ wget https://raw.githubusercontent.com/BugP/frps/master/frps_linux_uninstall.sh 
 #### 运行一键脚本
 修改以下脚本链接中的`BugP`为你的GitHub账号ID后,运行即可.
 ```shell
-wget https://raw.githubusercontent.com/BugP/frps/master/frps_linux_install.sh && chmod +x frps_linux_install.sh && ./frps_linux_install.sh
+wget https://raw.githubusercontent.com/a725970/frps/master/frps_linux_install.sh && chmod +x frps_linux_install.sh && ./frps_linux_install.sh
 ```
 #### 卸载脚本
 frps_linux_uninstall.sh 卸载脚本为通用脚本,可直接运行,也可同上方式修改链接后运行.
 ```shell
-wget https://raw.githubusercontent.com/BugP/frps/master/frps_linux_uninstall.sh && chmod +x frps_linux_uninstall.sh && ./frps_linux_uninstall.sh
+wget https://raw.githubusercontent.com/a725970/frps/master/frps_linux_uninstall.sh && chmod +x frps_linux_uninstall.sh && ./frps_linux_uninstall.sh
 ```
 
 ### frps相关命令
@@ -68,7 +68,7 @@ sudo systemctl stop frps
 
 先 **git clone** 本仓库,并正确配置 **frps.ini** 文件.
 ```shell
-git clone https://github.com/BugP/frps.git
+git clone https://github.com/a725970/frps.git
 # git clone 本仓库
 vi /root/frps/frps.ini
 # 配置 frps.ini 文件
@@ -81,7 +81,7 @@ docker run -d --name=frps --restart=always \
     -p 443:443 \
     -p 7000:7000 \
     -p 7500:7500 \
-    BugP/frps
+    a725970/frps
 ```
 > 以上命令 -v 挂载的目录是以 git clone 本仓库为例,也可以在任意位置手动创建 frps.ini 文件,并修改命令中的挂载路径.
 
